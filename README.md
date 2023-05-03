@@ -25,28 +25,18 @@ Follow these instructions to get the project up and running on your local machin
 - Install [Node.js](https://nodejs.org/en/download/) (which includes npm) for frontend dependencies.
 npm install -g @angular/cli
 - Install [Python](https://www.python.org/downloads/) (version 3.x recommended) for backend dependencies.
-- Install [pip](https://pip.pypa.io/en/stable/installation/) for managing Python packages.
-- Install [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html) for creating a virtual environment for the backend.
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/food-recipe.git
+git clone https://github.com/ProJBH/food-recipe.git
+```
+2. Install Flask:
+```bash
+pip install Flask flask-cors
 ```
 
-2. Navigate to the `frontend` folder and install the dependencies:
-```bash
-cd food-recipe/frontend
-npm install
-```
-3. Navigate to the `backend` folder, create a virtual environment, activate it, and install the dependencies:
-```bash
-cd ../backend
-virtualenv venv
-source venv/bin/activate (Linux/Mac) or venv\Scripts\activate (Windows)
-pip install -r requirements.txt
-```
 ## Running the Application
 
 1. Start the Angular development server in the `frontend` folder:
@@ -57,7 +47,7 @@ ng serve
 2. In a separate terminal, start the Flask development server in the `backend` folder:
 ```bash
 cd ../backend
-python app.py
+python server.py
 ```
 3. Open your browser and navigate to `http://localhost:4200` to access the Angular frontend.
 
