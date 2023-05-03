@@ -8,9 +8,9 @@ import { DishService } from '../dish.service';
 })
 export class DishSelectionComponent {
   dishes = [
-    { name: 'Dish 1', price: 10, selected: false },
-    { name: 'Dish 2', price: 15, selected: false },
-    { name: 'Dish 3', price: 12, selected: false },
+    { name: 'Dish 1', price: 10, selected: false, imageUrl: 'assets/images/dish1.png' },
+    { name: 'Dish 2', price: 15, selected: false, imageUrl: 'assets/images/dish2.png' },
+    { name: 'Dish 3', price: 12, selected: false, imageUrl: 'assets/images/dish3.png' },
   ];
 
   //This is the constructor for the Angular component class. 

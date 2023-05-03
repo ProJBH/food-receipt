@@ -7,7 +7,7 @@
         This is a container element with the *ngFor directive. 
         *ngFor is a structural directive in Angular that creates a loop, iterating over the dishes array. 
         For each dish in the dishes array, a new <div> element will be created with the content inside.-->
-    <div *ngFor="let dish of dishes">
+    <div *ngFor="let dish of dishes" class="dish-container">
         <!--<input type="checkbox" [(ngModel)]="dish.selected" name="{{ dish.name }}" />: 
             This is an input element with type="checkbox". 
             The [(ngModel)] directive is a two-way data binding between the input's value 
@@ -17,8 +17,10 @@
         <!--<label>{{ dish.name }} - ${{ dish.price }}</label>: 
             This is a label element that displays the name and price of the current dish object. 
             The values are displayed using interpolation (i.e., {{ dish.name }} and {{ dish.price }}).-->
-        <label>{{ dish.name }} - ${{ dish.price }}</label>
+        <label for="{{ dish.name }}">
+            <img [src]="dish.imageUrl" alt="{{ dish.name }}" class="dish-image" />
+            {{ dish.name }} - ${{ dish.price }}
+        </label>
     </div>
     <button type="submit">Submit Order</button>
 </form>
-  

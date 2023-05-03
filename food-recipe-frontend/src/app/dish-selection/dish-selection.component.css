@@ -21,6 +21,13 @@ label {
     display: inline-block;
 }
 
+.dish-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}  
 
 button[type='submit'] {
     /* Add your styles for the submit button element here */
