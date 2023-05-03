@@ -1,1 +1,24 @@
-<p>dish-selection works!</p>
+<!-- <form (ngSubmit)="submitOrder()">: 
+    This is the opening tag for the form element. 
+    The (ngSubmit) directive is an Angular event binding that listens for the form's submit event. 
+    When the form is submitted, the submitOrder() method in the component class will be called.-->
+<form (ngSubmit)="submitOrder()">
+    <!-- <div *ngFor="let dish of dishes">: 
+        This is a container element with the *ngFor directive. 
+        *ngFor is a structural directive in Angular that creates a loop, iterating over the dishes array. 
+        For each dish in the dishes array, a new <div> element will be created with the content inside.-->
+    <div *ngFor="let dish of dishes">
+        <!--<input type="checkbox" [(ngModel)]="dish.selected" name="{{ dish.name }}" />: 
+            This is an input element with type="checkbox". 
+            The [(ngModel)] directive is a two-way data binding between the input's value 
+            and the dish.selected property of the current dish object. 
+            The name attribute is set to the dish.name property using interpolation (i.e., {{ dish.name }}).-->
+        <input type="checkbox" [(ngModel)]="dish.selected" name="{{ dish.name }}" />
+        <!--<label>{{ dish.name }} - ${{ dish.price }}</label>: 
+            This is a label element that displays the name and price of the current dish object. 
+            The values are displayed using interpolation (i.e., {{ dish.name }} and {{ dish.price }}).-->
+        <label>{{ dish.name }} - ${{ dish.price }}</label>
+    </div>
+    <button type="submit">Submit Order</button>
+</form>
+  
