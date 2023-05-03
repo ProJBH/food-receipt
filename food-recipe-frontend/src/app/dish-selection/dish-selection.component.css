@@ -1,0 +1,41 @@
+.order-form {
+    /* Add your styles for the form element here */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+.dish-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+label {
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+
+button[type='submit'] {
+    /* Add your styles for the submit button element here */
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type='submit']:hover {
+    /* Add your styles for the submit button on hover */
+    background-color: #0069d9;
+}
