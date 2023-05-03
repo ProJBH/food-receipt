@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DishSelectionComponent } from './dish-selection/dish-selection.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DishSelectionComponent
   ],
   imports: [
     BrowserModule,
