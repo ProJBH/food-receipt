@@ -1,12 +1,12 @@
-# Food Recipe Application
+# Food Receipt Application
 
-A simple food recipe application that allows users to select dishes and calculate the total cost of the recipe. The application consists of an Angular frontend and a Flask backend.
+A simple food receipt application that allows users to select dishes and calculate the total cost of the receipt. The application consists of an Angular frontend and a Flask backend.
 
 ## Features
 
 - Users can select dishes from a list of available options.
-- The application calculates the total cost of the selected dishes and displays a detailed recipe.
-- The backend API calculates the recipe based on the selected dishes and returns the total amount and detailed recipe.
+- The application calculates the total cost of the selected dishes and displays a detailed receipt.
+- The backend API calculates the receipt based on the selected dishes and returns the total amount and detailed receipt.
 
 ## Table of Contents
 
