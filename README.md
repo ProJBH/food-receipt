@@ -30,7 +30,7 @@ npm install -g @angular/cli
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/ProJBH/food-recipe.git
+git clone https://github.com/ProJBH/food-receipt.git
 ```
 2. Install Flask:
 ```bash
