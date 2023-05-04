@@ -26,11 +26,11 @@ export class DishSelectionComponent {
     //This is done using the Array.prototype.filter() method.
     const selectedDishes = this.dishes.filter((dish) => dish.selected);
     //The subscribe() method is called on the observable to listen for the data returned from the backend. 
-    //The callback function inside the subscribe() method takes one parameter, recipe, with a specified type.
-    this.dishService.calculateRecipe(selectedDishes).subscribe((recipe: { totalAmount: number, detailedRecipe: Array<{ name: string, unitPrice: number }> }) => {
-      let message = `Total amount: $${recipe.totalAmount}\n\nDetailed Recipe:\n`;
+    //The callback function inside the subscribe() method takes one parameter, Receipt, with a specified type.
+    this.dishService.calculateReceipt(selectedDishes).subscribe((Receipt: { totalAmount: number, detailedReceipt: Array<{ name: string, unitPrice: number }> }) => {
+      let message = `Total amount: $${Receipt.totalAmount}\n\nDetailed Receipt:\n`;
   
-      recipe.detailedRecipe.forEach((item: { name: string, unitPrice: number }) => {
+      Receipt.detailedReceipt.forEach((item: { name: string, unitPrice: number }) => {
         message += `${item.name} - $${item.unitPrice}\n`;
       });
   

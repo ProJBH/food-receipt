@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 
-//The class is responsible for communicating with a backend API to calculate the recipe based on selected dishes
+//The class is responsible for communicating with a backend API to calculate the Receipt based on selected dishes
 //The export keyword makes the class available to other modules in the application that may need to import it.
 export class DishService {
   //This value represents the base URL of the backend API that the DishService class will communicate with.
@@ -26,13 +26,13 @@ export class DishService {
   //The HttpClient instance will be used to make HTTP requests to the backend API.
   constructor(private http: HttpClient) {}
 
-  //The purpose of this method is to send the selected dishes to the backend API and return the calculated recipe as an Observable.
-  calculateRecipe(selectedDishes: any[]): Observable<any> {
+  //The purpose of this method is to send the selected dishes to the backend API and return the calculated Receipt as an Observable.
+  calculateReceipt(selectedDishes: any[]): Observable<any> {
 
     //This line uses the post() method of the HttpClient instance to send an HTTP POST request to the backend API. 
-    //The URL of the API endpoint is constructed using the apiUrl property and the /calculate-recipe path. 
+    //The URL of the API endpoint is constructed using the apiUrl property and the /calculate-Receipt path. 
     //The selected dishes are sent as the payload of the request in an object with a single property dishes. 
     //The post() method returns an Observable of type any that represents the response from the API.
-    return this.http.post<any>(`${this.apiUrl}/calculate-recipe`, { dishes: selectedDishes });
+    return this.http.post<any>(`${this.apiUrl}/calculate-Receipt`, { dishes: selectedDishes });
   }
 }
